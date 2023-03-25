@@ -3,11 +3,11 @@
 
 namespace reverse_string {
 
-std::string other_reverse_string(const std::string& str) {
+std::string reverse_string(const std::string& str) {
     return std::string{str.rbegin(), str.rend()};
 }
 
-std::string reverse_string(std::string str) {
+std::string simple_reverse_string(std::string str) {
     std::string reversed;
     int length = str.length();
 
