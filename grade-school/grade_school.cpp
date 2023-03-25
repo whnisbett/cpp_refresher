@@ -16,6 +16,13 @@ namespace grade_school {
         return roster_;
     }
 
+    std::vector<std::string> school::grade(int grade) const
+    {
+        std::vector<std::string> empty_vector {};
+        auto it {roster_.find(grade)};
+        if (it == roster_.end())
+            return empty_vector;
+        return it->second;
     }
 
 }  // namespace grade_school
