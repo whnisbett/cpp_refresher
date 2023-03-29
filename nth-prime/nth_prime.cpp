@@ -9,14 +9,14 @@ namespace nth_prime
     {
         if (n < 1)
             throw std::domain_error("The nth prime is undefined for n < 1.");
-        
+
         // begin with 2 so that we can only search odd numbers
         std::vector<long> primes{2};
-        long candidate {3};
-        while (int(primes.size()) != n) 
+        long candidate{3};
+        while (int(primes.size()) != n)
         {
             // assume the candidate is prime
-            bool is_prime {true};
+            bool is_prime{true};
             // check if it is divisible by any of the prime so far
             for (auto &p : primes)
             {
