@@ -4,7 +4,7 @@
 
 namespace secret_handshake
 {
-    
+
     void assert_valid_sequence(int sequence)
     {
         if ((sequence < 0) | (sequence > 31))
@@ -16,8 +16,8 @@ namespace secret_handshake
     std::vector<std::string> commands(int sequence)
     {
         assert_valid_sequence(sequence);
-        
-        std::vector<std::string> command_sequence {};
+
+        std::vector<std::string> command_sequence{};
         if (sequence & 1)
         {
             command_sequence.push_back("wink");
@@ -39,6 +39,5 @@ namespace secret_handshake
             std::reverse(command_sequence.begin(), command_sequence.end());
         }
         return command_sequence;
-
     }
 } // namespace secret_handshake
