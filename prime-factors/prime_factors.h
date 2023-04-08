@@ -4,8 +4,8 @@
 
 namespace prime_factors {
 
-    std::vector<int> of(unsigned int n);
-    bool is_prime(unsigned int n);
+    std::vector<int> of(int n);
+    bool is_prime(int n);
 
 }  // namespace prime_factors
 
